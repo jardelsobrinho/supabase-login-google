@@ -1,7 +1,7 @@
-### Configurações do Projeto
+### LOGIN SUPABASE COM GOOGLE
 Para configurar o login usando a autenticação do google, é necessário configurar alguns procedimentos.
 
-#### No Google Cloud
+#### Configurações no Google Cloud
 
  1. Crie um novo projeto no google cloud
  2. Acesse o Menu de **API E SERVIÇOS > CREDENCIAIS**
@@ -27,13 +27,13 @@ Por fim clique em **CRIAR**.
 
 15. Repita o procedimento para criar o Client Id da web, mas nesse caso não precisa de SHA1.
 
-#### Configura o Supabase
+#### Configurações no Supabase
 1. Acesse o painel do **Supabase > Authentication**.
 2. Clique em **Providers** e escolha o **Google**
 3. Marque **Enable Sign in with Google** e preencha o campo Clients Id com os Ids criados no Google Cloud, separando eles por virgula. Obs: Para o IPhone existe um procedimento a mais a ser feito, tem que pesquisar ainda.
 4. Clique em **Save**.
  
-#### Configura o Projeto
+#### Configurações no Projeto
 No arquivo LoginPage.dart, copie e cole o IdClient da Web na variavel webClientId. Pode ignorar a variável iosClientId. 
 
 Dessa forma o projeto vai compilar e realizar o login usando o google.
